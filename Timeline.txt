@@ -1,0 +1,41 @@
+?:?? Got the video splice working. Not easy loading an experimental driver that harvests video instead of sending it out. Had trouble getting the screen resolutions to match-- so I am working split screen. Time to start actually working.
+
+2:25P So, I've extracted the visuals from the PSD that it is not prudent to duplicate with CSS-- Also, I think I can add noise via CSS. So I did not add it to the logo. It will compress better without the noise as well as be more uniform.
+
+2:26P Selected image formats for quality & size.
+
+2:33P Created project file structure.
+
+2:35P End snack time.
+
+2:49P Forked github repo.
+
+2:50P Pull reset CSS and jQuery from external sources.
+
+3:11P Prepare files for pushing to github (kind of forgot how)
+
+3:25P Start fleshing out the index.htm
+
+3:50 Got index.html drafted for major structure
+
+4:00 you crashed my IDE... time to see what I need to incorporate the susy SASS responsive grid.
+
+4:05P Set timer for end of this session.
+
+4:20 Pushed to github.
+
+4:46P Gotta put the equipment out of the reach of the children and go lead a PHP soiree for maybe 3 people... 5 signed up (including me) plus the 1 that already cancelled.
+
+9:42P All put back together, windows opened, & ready to work.
+
+10:38P All the rough markup to the footer. It has been a long day, I need to pace for a little while and close my eyes for a few minutes.
+
+10:52P Now to get into the footer and start my scss.
+
+12:13A Gave up on using a noise inducing SASS/SCSS mixin. Pushed to github. Worried for a moment I may fail the 8 hour deadline. Maybe learning modern SASS & SASS tools will make it okay...? Went to bed.
+
+Saturday
+
+1:03P Generated a noise .png converted it to base64. Put the base64 in my SCSS.
+
+1:30P Well, there was 8 hours of focused work. I am going to github it under that. I am rusty, working from home (I hate it for what it is in reality-- when it could be so nice.), and seriously the recording is super janky. No one to blame but myself. Soldiering on because this SCSS/compass stuff is really neat. It will be super neat when I know how to use it better.
