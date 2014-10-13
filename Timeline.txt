@@ -39,3 +39,5 @@ Saturday
 1:03P Generated a noise .png converted it to base64. Put the base64 in my SCSS.
 
 1:30P Well, there was 8 hours of focused work. I am going to github it under that. I am rusty, working from home (I hate it for what it is in reality-- when it could be so nice.), and seriously the recording is super janky. No one to blame but myself. Soldiering on because this SCSS/compass stuff is really neat. It will be super neat when I know how to use it better.
+
+2:45P Having SASS compass software issues.
