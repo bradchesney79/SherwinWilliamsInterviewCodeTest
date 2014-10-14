@@ -101,7 +101,7 @@ color:#1DA7DD;
 .nav-menu-item a {
 text-decoration:none;
 padding:1em;
-@include border-radius(4px, 4px);
+@include border-radius(0.25em, 0.25em);
 margin:0;
 }
 
@@ -161,6 +161,10 @@ border:0;
 margin:0;
 }
 
+.significant-content-section-title-right {
+@include border-top-right-radius(0.25em);
+}
+
 .content-section {
 padding:0 2em;
 }
@@ -168,6 +172,10 @@ padding:0 2em;
 .content-section-image {
 float:right;
 margin:2em;
+}
+
+.significant-first-child {
+@include border-top-radius(0.25em);
 }
 
 #page {
@@ -305,18 +313,23 @@ color: #1DA7DD;
 }
 }
 
-#content-section-title-000 {
-@include border-top-radius(0.25em);
-}
-
-#content-section-title-right-000 {
-@include border-top-right-radius(0.25em);
-}
-
 #content-right {
 width:20em;
 float:left;
 display:block;
+background: #404040;
+@include border-radius(0.25em, 0.25em);
+
+div.content-section-right h2 {
+background:#404040;
+}
+
+.content-section-title {
+font-family:$defaultfontstack;
+font-size:1em;
+font-weight:bold;
+color:#9D9D9D;
+}
 }
 
 #footer-section {
