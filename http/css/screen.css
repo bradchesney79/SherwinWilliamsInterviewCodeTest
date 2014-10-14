@@ -43,19 +43,26 @@ a:active {
 }
 
 /* line 62, ../sass/screen.scss */
+h1, h2 {
+  margin: 0;
+}
+
+/* line 66, ../sass/screen.scss */
 html, body, div {
   padding: 0;
   border: 0;
   margin: 0;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 p {
+  margin: 2.0em 3.0em 2.0em 0;
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.75em;
+  color: #333333;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .header-menu {
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.625em;
@@ -63,24 +70,25 @@ p {
   text-decoration: none;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 span.header-menu {
   color: #A3A3A3;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .main-title {
   font-family: GothamRounded-Medium, sans-serif;
+  color: #292929;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .nav-menu-item {
   display: inline;
   font-family: GothamRounded-Medium, sans-serif;
   color: #1DA7DD;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .nav-menu-item a {
   text-decoration: none;
   padding: 1em;
@@ -91,38 +99,87 @@ span.header-menu {
 }
 
 /* unvisited link */
-/* line 102, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .nav-menu-item a:link {
   color: #1DA7DD;
 }
 
 /* visited link */
-/* line 107, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .nav-menu-item a:visited {
   color: #1DA7DD;
 }
 
 /* mouse over link */
-/* line 112, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .nav-menu-item a:hover {
   color: #1DA7DD;
   background: #292929 url(../images/noise.png);
 }
 
 /* link as it is clicked */
-/* line 118, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .nav-menu-item a:active {
   color: #1DA7DD;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
+.content-section-title {
+  height: 1.75em;
+  max-width: 38em;
+  min-width: 320em/16;
+  background: #292929;
+}
+
+/* line 135, ../sass/screen.scss */
+.content-section-title-left {
+  max-width: 30.25em;
+  min-width: 20em;
+  display: inline;
+}
+
+/* line 143, ../sass/screen.scss */
+.content-section-title-text {
+  position: relative;
+  top: 0.25em;
+  left: 1em;
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #DDDDDD;
+}
+
+/* line 153, ../sass/screen.scss */
+.content-section-title-right {
+  background: #D5D5D5;
+  width: 1.75em;
+  height: 1.75em;
+  display: block;
+  float: right;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/* line 164, ../sass/screen.scss */
+.content-section {
+  padding: 0 2em;
+}
+
+/* line 168, ../sass/screen.scss */
+.content-section-image {
+  float: right;
+  margin: 2em;
+}
+
+/* line 173, ../sass/screen.scss */
 #page {
   min-width: 320px;
   width: 100%;
   background-color: #FFFFFF;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #header-section {
   width: 100%;
   /*background: #292929 url(data:image/png;base64,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
@@ -150,7 +207,7 @@ span.header-menu {
   background: #292929 url(../images/noise.png);
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #header {
   max-width: 74.375em;
   width: 100%;
@@ -159,21 +216,21 @@ span.header-menu {
   margin-right: auto;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 #header-menu {
   margin: 0.25em 1.5em 0 0;
   display: block;
   float: left;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #header-search-container {
   display: block;
   float: left;
   margin: 0.25em 0 0 0;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 #header-search {
   width: 9em;
   height: 1.625em;
@@ -183,7 +240,7 @@ span.header-menu {
   display: inline;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 #header-search-go {
   width: 1.5em;
   height: 1.625em;
@@ -194,15 +251,16 @@ span.header-menu {
   margin-left: 0;
   background-image: url("../images/magnifying-glass.png");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #logo {
   position: absolute;
   left: -1.875em;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 #logo-hack {
   width: 60.8%;
   height: 5em;
@@ -210,33 +268,37 @@ span.header-menu {
   display: block;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #nav-section {
+  width: 100%;
   max-width: 60em;
   min-width: 20em;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 #nav {
   padding: 0;
+  margin: 0.75em 0 3em;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #content {
-  width: 60em;
+  width: 100%;
+  max-width: 60em;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #content-left {
   max-width: 40em;
-  min-width: 20em;
+  min-width: 30em;
   float: left;
+  display: block;
 }
-/* line 239, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 #content-left .subtitle {
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.75em;
@@ -244,18 +306,36 @@ span.header-menu {
   color: #1DA7DD;
 }
 
-/* line 247, ../sass/screen.scss */
-#content-right {
-  max-width: 20em;
-  float: left;
+/* line 308, ../sass/screen.scss */
+#content-section-title-000 {
+  -moz-border-radius-topleft: 0.25em;
+  -webkit-border-top-left-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+  -moz-border-radius-topright: 0.25em;
+  -webkit-border-top-right-radius: 0.25em;
+  border-top-right-radius: 0.25em;
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
+#content-section-title-right-000 {
+  -moz-border-radius-topright: 0.25em;
+  -webkit-border-top-right-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+
+/* line 316, ../sass/screen.scss */
+#content-right {
+  width: 20em;
+  float: left;
+  display: block;
+}
+
+/* line 322, ../sass/screen.scss */
 #footer-section {
   clear: both;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 #footer {
   width: 60em;
   margin-left: auto;

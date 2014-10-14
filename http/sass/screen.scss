@@ -59,6 +59,10 @@ a:active {
 color: #EEEEFF;
 }
 
+h1, h2 {
+margin:0;
+}
+
 html, body, div {
 padding:0;
 border:0;
@@ -66,8 +70,10 @@ margin:0;
 }
 
 p {
+margin:2.0em 3.0em 2.0em 0;
 font-family:$defaultfontstack;
 font-size:0.75em;
+color:#333333;
 }
 
 .header-menu {
@@ -83,6 +89,7 @@ color:#A3A3A3;
 
 .main-title {
 font-family:$roundedfontstack;
+color:#292929;
 }
 
 .nav-menu-item {
@@ -117,6 +124,50 @@ background: #292929 url(../images/noise.png);
 /* link as it is clicked */
 .nav-menu-item a:active {
 color: #1DA7DD;
+}
+.content-section-title {
+height:1.75em;
+max-width:38em;
+min-width:320em/16;
+background: #292929;
+}
+
+.content-section-title-left {
+
+max-width:30.25em;
+min-width:20em;
+display:inline;
+}
+
+
+.content-section-title-text {
+position:relative;
+top:0.25em;
+left:1em;
+font-family:$defaultfontstack;
+font-size:0.75em;
+font-weight:bold;
+color:#DDDDDD;
+}
+
+.content-section-title-right {
+background: #D5D5D5;
+width:1.75em;
+height:1.75em;
+display:block;
+float:right;
+padding:0;
+border:0;
+margin:0;
+}
+
+.content-section {
+padding:0 2em;
+}
+
+.content-section-image {
+float:right;
+margin:2em;
 }
 
 #page {
@@ -199,6 +250,7 @@ border-left:0;
 margin-left:0;
 background-image:url('../images/magnifying-glass.png');
 background-repeat:no-repeat;
+background-position: center; 
 
 }
 
@@ -215,6 +267,7 @@ display:block;
 }
 
 #nav-section {
+width:100%;
 max-width:60em;
 min-width:20em;
 margin-left:auto;
@@ -223,18 +276,26 @@ margin-right:auto;
 
 #nav {
 padding:0;
+margin:0.75em 0 3em;
+}
+
+#content-section {
+
 }
 
 #content {
-width:60em;
+width:100%;
+max-width:60em;
 margin-left:auto;
 margin-right:auto;
+
 }
 
 #content-left {
 max-width:40em;
-min-width:20em;
+min-width:30em;
 float:left;
+display:block;
 
 .subtitle {
 font-family: $defaultfontstack;
@@ -244,9 +305,18 @@ color: #1DA7DD;
 }
 }
 
+#content-section-title-000 {
+@include border-top-radius(0.25em);
+}
+
+#content-section-title-right-000 {
+@include border-top-right-radius(0.25em);
+}
+
 #content-right {
-max-width:20em;
+width:20em;
 float:left;
+display:block;
 }
 
 #footer-section {
