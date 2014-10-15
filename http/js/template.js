@@ -5,7 +5,7 @@
 //Revealing Module Pattern (Public & Private)
 var search = (function() {
   var pub = {}; //Private
- 
+  
   //Public method
   pub.searchAdd = function() {
     $('#header-search').addClass('search-background');
@@ -13,6 +13,15 @@ var search = (function() {
 
   pub.searchRemove = function() {
     $('#header-search').removeClass('search-background');
+  }
+    
+  pub.toggleSearch = function() {
+    if ($('#header-search').val().length > 0) {
+      pub.searchRemove();
+    }
+    else {
+      pub.searchAdd();
+    }
   };
  
   //Return just the public parts
@@ -42,8 +51,7 @@ var accordion = (function() {
 }());
 
 $( document ).ready(function() {
-
-
+//var headerSearch = '#' + $('#header-search').attr('id');
 $('#header-search').val('').addClass('search-background').focus();
 $('.content-section-title-right').addClass('content-section-title-right-plus');
 $('#content-left .content-section').hide();
@@ -56,21 +64,15 @@ accordion.toggleAccordion($(this).attr('id'));
 
 
 $('#header-search').on('change', function () {
-   
+  search.toggleSearch();
 });
 
-/*
-on change to check for search val
 
-on key up to check for search val
-
-timer to check for search val
+$('#header-search').keyup(function(){
+  search.toggleSearch();
+});
 
 
-*/
-
-
-
-
-
+setInterval(function() { search.toggleSearch(); },100);
+   
 });
