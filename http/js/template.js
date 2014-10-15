@@ -2,52 +2,70 @@
 // 2014 10 15
 // BradChesney79
 
-//Object Literal declaring properties and methods
-var search = {
+//Revealing Module Pattern (Public & Private)
+var search = (function() {
+  var pub = {}; //Private
+ 
+  //Public method
+  pub.searchAdd = function() {
+    $('#header-search').addClass('search-background');
+  };
 
-  //public methods
-  search-add: function() {
-    $('#header-search').addclass('search-background');
-  }
+  pub.searchRemove = function() {
+    $('#header-search').removeClass('search-background');
+  };
+ 
+  //Return just the public parts
+  return pub;
+}());
 
-  search-remove: function() {
-    $('#header-search').removeclass('search-background');
-  }
-  
-};
-
-var accordion = {
-
-  toggle-accordion: function(clickedElement) {
-	//accordion.elementIdWithStrippedInlineQuantifierSuffix = clickedElementIdTextSubstring;
-    $(clickedElementId).toggleClass('content-section-title-right-plus content-section-title-right-dash');
-    $(ElementRelatedToClickedElementId).slideToggle( "slow" );
+var accordion = (function() {
+  var pub = {}; //Private
+ 
+  //Public method
+  pub.toggleAccordion = function(clickedElementId) {
+    elementIdLength = clickedElementId.length;
+    elementIdQuantifierSuffix = clickedElementId.substring(elementIdLength-3,elementIdLength);
+    clickedElementIdWithQuantifierSuffix = '#' + clickedElementId;
+    $(clickedElementIdWithQuantifierSuffix).toggleClass('content-section-title-right-plus content-section-title-right-dash');
+    elementRelatedToClickedElementId = '#content-section-' + elementIdQuantifierSuffix;
+    $(elementRelatedToClickedElementId).slideToggle( "slow" );
     // What if one misses? They become unsynced...
     // Some ifs, well placed addClasses,
     // some specific close or open animations,
     // and no toggles would provide better assurance
     // of expected operation.
-  };
-
-};
+  }
  
+  //Return just the public parts
+  return pub;
+}());
 
 $( document ).ready(function() {
 
 
-$('#header-search').value('').addclass('search-background').focus();
-$('.content-section-title-right').addclass('content-section-title-right-plus');
+$('#header-search').val('').addClass('search-background').focus();
+$('.content-section-title-right').addClass('content-section-title-right-plus');
 $('#content-left .content-section').hide();
 
-/*
+$('.content-section-title-right').on('click', function(event) {
 
+accordion.toggleAccordion($(this).attr('id'));
+
+});
+
+
+$('#header-search').on('change', function () {
+   
+});
+
+/*
 on change to check for search val
 
 on key up to check for search val
 
 timer to check for search val
 
-on click to operate accordion
 
 */
 

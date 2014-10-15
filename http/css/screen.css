@@ -427,9 +427,11 @@ span.header-menu {
 #footer-section {
   clear: both;
   background: #DDDDDD;
+  position: relative;
+  top: 2em;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 #footer {
   max-width: 60em;
   padding: 1.25em;
@@ -438,7 +440,7 @@ span.header-menu {
   height: 20em;
 }
 
-/* line 415, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 #copyright {
   float: left;
   display: inline;
@@ -447,12 +449,12 @@ span.header-menu {
   color: #494949;
 }
 
-/* line 424, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 #footer-menu {
   float: right;
   display: inline;
 }
-/* line 428, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 #footer-menu a, #footer-menu span {
   display: inline;
   font-family: Tahoma-Regular, sans-serif;
