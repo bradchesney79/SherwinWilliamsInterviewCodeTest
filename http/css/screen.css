@@ -18,7 +18,7 @@
   font-style: normal;
 }
 
-/* line 17, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,94 +40,95 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../sass/compass/lib/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 /* unvisited link */
-/* line 42, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 a:link {
   color: #F8F8F8;
 }
 
 /* visited link */
-/* line 47, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 a:visited {
   color: #EEEEEE;
 }
 
 /* mouse over link */
-/* line 52, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 a:hover {
   color: #FFFFFF;
 }
 
 /* link as it is clicked */
-/* line 57, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 a:active {
   color: #EEEEFF;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 h1, h2 {
   margin: 0;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 html, body, div {
   padding: 0;
   border: 0;
   margin: 0;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 p {
-  margin: 2.0em 3.0em 2.0em 0;
+  line-height: 1.5em;
+  margin: 2.0em;
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.75em;
   color: #333333;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .header-menu {
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.625em;
@@ -135,32 +136,35 @@ p {
   text-decoration: none;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 span.header-menu {
   color: #A3A3A3;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .search-background {
   background-image: url("../images/search.png");
   background-repeat: no-repeat;
   background-position: left center;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .main-title {
+  margin: 0 0 0.25em 0;
   font-family: GothamRounded-Medium, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
   color: #292929;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .nav-menu-item {
   display: inline;
   font-family: GothamRounded-Medium, sans-serif;
   color: #1DA7DD;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .nav-menu-item a {
   padding: 1em;
   -moz-border-radius-bottomleft: 0.25em;
@@ -178,57 +182,69 @@ span.header-menu {
 }
 
 /* unvisited link */
-/* line 118, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .nav-menu-item a:link {
   color: #1DA7DD;
 }
 
 /* visited link */
-/* line 123, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .nav-menu-item a:visited {
   color: #1DA7DD;
 }
 
 /* mouse over link */
-/* line 128, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .nav-menu-item a:hover {
   color: #1DA7DD;
   background: #292929 url("../images/noise.png");
+  -webkit-box-shadow: 0em 0.5em 0.5em -0.5em black;
+  -moz-box-shadow: 0em 0.5em 0.5em -0.5em black;
+  box-shadow: 0em 0.5em 0.5em -0.5em black;
 }
 
 /* link as it is clicked */
-/* line 134, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .nav-menu-item a:active {
   color: #1DA7DD;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .content-section-title {
   height: 1.75em;
   max-width: 38em;
-  min-width: 320em/16;
-  background: #292929;
-}
-
-/* line 144, ../sass/screen.scss */
-.content-section-title-left {
-  max-width: 30.25em;
   min-width: 20em;
-  display: inline;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
+.content-paragraph {
+  padding: 2em 1em 2em 0;
+  border: 0 none;
+  margin: 0;
+  max-width: 49.625em;
+  min-width: 20em;
+}
+
+/* line 164, ../sass/screen.scss */
+.content-section-title-left {
+  height: 1.75em;
+  max-width: 30.25em;
+  min-width: 16em;
+  display: inline-block;
+}
+
+/* line 171, ../sass/screen.scss */
 .content-section-title-text {
-  position: relative;
-  top: 0.25em;
-  left: 1em;
+  height: 1.75em;
+  padding: 0.6em;
+  display: inline-block;
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.75em;
   font-weight: bold;
   color: #DDDDDD;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .content-section-title-right {
   background: #D5D5D5;
   width: 1.75em;
@@ -238,41 +254,46 @@ span.header-menu {
   padding: 0;
   border: 0;
   margin: 0;
+  border-right: 0.0625em solid #A4A4A4;
+  border-bottom: 0.0625em solid #A4A4A4;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .content-section-title-right-plus {
   background-image: url("../images/greyplus.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .content-section-title-right-dash {
   background-image: url("../images/bluedash.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .significant-content-section-title-right {
   -moz-border-radius-topright: 0.25em;
   -webkit-border-top-right-radius: 0.25em;
   border-top-right-radius: 0.25em;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .content-section {
-  padding: 0 2em;
+  border-right: 0.0625em solid #BBBBBB;
+  border-bottom: 0.0625em solid #DDDDDD;
+  border-left: 0.0625em solid #BBBBBB;
+  padding: 2em 0;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .content-section-image {
   float: right;
   margin: 2em;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .significant-first-child {
   -moz-border-radius-topleft: 0.25em;
   -webkit-border-top-left-radius: 0.25em;
@@ -282,7 +303,7 @@ span.header-menu {
   border-top-right-radius: 0.25em;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .new-content-indicator {
   height: 0.45em;
   padding: 0.25em;
@@ -295,7 +316,7 @@ span.header-menu {
   background: #6DCFF6;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .new-content-indicator-text {
   padding: 0;
   border: 0;
@@ -308,67 +329,71 @@ span.header-menu {
   color: #FFFFFF;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .content-right-divider {
   margin: 0 1.5em;
-  border: none;
-  height: 1px;
+  height: 2px;
   /* old IE */
   color: #757575;
   /* Modern Browsers */
   background-color: #757575;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 #page {
   min-width: 320px;
   width: 100%;
   background-color: #FFFFFF;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #header-section {
   width: 100%;
   /*decided against the base64 encoded image in the CSS*/
   /*background: #292929 url('data:image/png;base64,iVBORw0KGgoA...ytpijCO9OGQAAAAASUVORK5CYII=');*/
-  background: #292929 url(../images/noise.png);
-  position: relative;
+  background: #292929 left top url(../images/noise.png) scroll repeat;
 }
 
-/* line 246, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 #header {
-  max-width: 74.375em;
   width: 100%;
+  min-width: 20em;
+  max-width: 60em;
+  padding: 0 1em;
   height: 7.5em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #header-menu {
+  position: absolute;
+  top: 0.125em;
+  right: 0%;
   margin: 0.25em 1.5em 0 0;
   display: block;
   float: left;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #header-search-container {
-  display: block;
-  float: left;
+  display: inline-block;
   margin: 0.25em 0 0 0;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #header-search {
   width: 9em;
   height: 1.625em;
   padding-right: 0;
   border: 0 none;
   margin-right: 0;
+  margin-left: 1em;
   display: inline;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 #header-search-go {
   width: 1.5em;
   height: 1.625em;
@@ -382,84 +407,136 @@ span.header-menu {
   background-position: center;
 }
 
-/* line 288, ../sass/screen.scss */
-#logo {
-  position: absolute;
-  left: -1.875em;
-}
-
-/* line 293, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #logo-hack {
-  width: 60.8%;
-  height: 5em;
-  float: left;
+  width: 20em;
+  height: 7.5em;
+  overflow: visible;
   display: block;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
+#logo {
+  position: absolute;
+  left: -14.375em;
+  display: inline-block;
+}
+
+/* line 333, ../sass/screen.scss */
 #nav-section {
   width: 100%;
   max-width: 60em;
-  min-width: 20em;
+  min-width: 18em;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 #nav {
-  padding: 0;
+  padding: 0 1em;
   margin: 0.75em 0 3em;
 }
 
-/* line 313, ../sass/screen.scss */
+/*
+#nav-about-us:hover {
+
+experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
+
+  -webkit-box-shadow: 0em 0.5em 0.5em -0.5em black;
+  -moz-box-shadow: 0em 0.5em 0.5em -0.5em black;
+  box-shadow: 0em 0.5em 0.5em -0.5em black;
+
+@include single-box-shadow(#000000, 0em, 0.5em, 0.5em, -0.5em, false);
+
+  $color  : $default-box-shadow-color,
+  $hoff   : $default-box-shadow-h-offset,
+  $voff   : $default-box-shadow-v-offset,
+  $blur   : $default-box-shadow-blur,
+  $spread : $default-box-shadow-spread,
+  $inset  : $default-box-shadow-inset
+}
+*/
+/* line 365, ../sass/screen.scss */
 #content {
   width: 100%;
+  padding: 0 1em;
   max-width: 60em;
+  min-width: 20em;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 #content-left {
   width: 100%;
-  max-width: 40em;
-  min-width: 20em;
+  max-width: 38em;
+  min-width: 18em;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
   float: left;
-  display: block;
+  display: inline-block;
 }
-/* line 327, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 #content-left .subtitle {
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.75em;
   font-weight: bold;
   color: #1DA7DD;
 }
+/* line 390, ../sass/screen.scss */
+#content-left .content-section-title {
+  height: 1.75em;
+  border-bottom: 0.0625em solid #404040;
+  display: block;
+  background: #292929;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3a3a3a), color-stop(100%, #2e2e2e));
+  background-image: -webkit-linear-gradient(#3a3a3a, #2e2e2e);
+  background-image: -moz-linear-gradient(#3a3a3a, #2e2e2e);
+  background-image: -o-linear-gradient(#3a3a3a, #2e2e2e);
+  background-image: linear-gradient(#3a3a3a, #2e2e2e);
+}
 
-/* line 335, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 #content-right {
-  width: 20em;
+  width: 19.875em;
+  border-top: 0.1875em solid #404040;
+  border-right: 0.0625em solid #404040;
+  border-left: 0.0625em solid #404040;
   float: left;
   display: block;
   background: #9D9D9D;
   -webkit-border-radius: 0.25em 0.25em;
   -moz-border-radius: 0.25em / 0.25em;
   border-radius: 0.25em / 0.25em;
+  -webkit-box-shadow: inset 0em 0em 5em -0.5em #404040;
+  -moz-box-shadow: inset 0em 0em 5em -0.5em #404040;
+  box-shadow: inset 0em 0em 5em -0.5em #404040;
+  /*
+    $color  : $default-box-shadow-color,
+    $hoff   : $default-box-shadow-h-offset,
+    $voff   : $default-box-shadow-v-offset,
+    $blur   : $default-box-shadow-blur,
+    $spread : $default-box-shadow-spread,
+    $inset  : $default-box-shadow-inset
+  */
 }
-/* line 342, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 #content-right div.content-section-right h2 {
+  min-width: 14em;
   margin: 1.5em 0 0 1.5em;
   display: inline-block;
-  background: #9D9D9D;
+  background: none;
 }
-/* line 348, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 #content-right .content-section-title {
+  min-width: 16em;
   display: inline;
   font-family: Tahoma-Regular, sans-serif;
   font-size: 1em;
   font-weight: bold;
   color: #404040;
 }
-/* line 356, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 #content-right p {
   padding: 0em;
   border: 0 none;
@@ -468,24 +545,27 @@ span.header-menu {
   color: #FFFFFF;
 }
 
-/* line 365, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 #footer-section {
-  clear: both;
-  background: #DDDDDD;
   position: relative;
   top: 2em;
+  -webkit-box-shadow: inset 0em 7em 1em -7em #404040;
+  -moz-box-shadow: inset 0em 7em 1em -7em #404040;
+  box-shadow: inset 0em 7em 1em -7em #404040;
+  clear: both;
+  background: #DDDDDD;
 }
 
-/* line 372, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 #footer {
+  height: 20em;
   max-width: 60em;
   padding: 1.25em;
   margin-left: auto;
   margin-right: auto;
-  height: 20em;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 #copyright {
   float: left;
   display: inline;
@@ -494,12 +574,12 @@ span.header-menu {
   color: #494949;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 #footer-menu {
   float: right;
   display: inline;
 }
-/* line 392, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
 #footer-menu a, #footer-menu span {
   display: inline;
   font-family: Tahoma-Regular, sans-serif;

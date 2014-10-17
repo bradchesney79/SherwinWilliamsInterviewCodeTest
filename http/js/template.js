@@ -13,7 +13,7 @@ var search = (function() {
 
   pub.searchRemove = function() {
     $('#header-search').removeClass('search-background');
-  }
+  };
     
   pub.toggleSearch = function() {
     if ($('#header-search').val().length > 0) {
@@ -44,7 +44,7 @@ var accordion = (function() {
     // some specific close or open animations,
     // and no toggles would provide better assurance
     // of expected operation.
-  }
+  };
  
   //Return just the public parts
   return pub;
