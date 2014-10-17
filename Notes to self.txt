@@ -1,0 +1,23 @@
+<link rel="shortcut icon" href="/images/favicon.ico" />
+16x16 X-ICON mime
+
+text is gotham rounded for logo
+        
+        
+<!--[if (gt IE 8)|!(IE)]><!-->		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		if(!window.jQuery)  { /* if it failed to load from the CDN, grab it from the server */
+			document.write(unescape("%3Cscript src='/sherwin-williams/js/libs/jquery.modern.min.js'%3E%3C/script%3E"));
+		}
+	</script>
+<!--<![endif]-->
+
+<!--[if (lt IE 9)]>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		if(!window.jQuery)  { /* if it failed to load from the CDN, grab it from the server */
+			document.write(unescape("%3Cscript src='/sherwin-williams/js/libs/jquery.min.js'%3E%3C/script%3E"));
+		}
+	</script>
+<![endif]-->	

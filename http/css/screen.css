@@ -1,93 +1,561 @@
-/*
-Syntax error: Function background_noise doesn't support keyword arguments
-        on line 45 of /home/brad/Desktop/SW PSD to HTML test/http/sass/_noise.scss, in `background-noise'
-        from line 20 of /home/brad/Desktop/SW PSD to HTML test/http/sass/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'Tahoma-Regular';
+  src: url("../fonts/tahoma.eot");
+  src: url("../fonts/tahoma.eot") format("embedded-opentype"), url("../fonts/tahoma.woff2") format("woff2"), url("../fonts/tahoma.woff") format("woff"), url("../fonts/tahoma.ttf") format("truetype"), url("../fonts/tahoma.svg#TahomaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
-Backtrace:
-/home/brad/Desktop/SW PSD to HTML test/http/sass/_noise.scss:45:in `background-noise'
-/home/brad/Desktop/SW PSD to HTML test/http/sass/screen.scss:20
-/usr/lib/ruby/vendor_ruby/sass/script/funcall.rb:186:in `construct_ruby_args'
-/usr/lib/ruby/vendor_ruby/sass/script/funcall.rb:107:in `_perform'
-/usr/lib/ruby/vendor_ruby/sass/script/node.rb:40:in `perform'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:268:in `block (3 levels) in visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:268:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:268:in `block (2 levels) in visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:268:in `block in visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:70:in `perform_arguments'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:263:in `visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:140:in `block (2 levels) in compile'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:139:in `block in compile'
-/usr/lib/ruby/vendor_ruby/compass/logger.rb:45:in `red'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:138:in `compile'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:118:in `compile_if_required'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:103:in `block (2 levels) in run'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:101:in `each'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:101:in `block in run'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:100:in `run'
-/usr/lib/ruby/vendor_ruby/compass/commands/watch_project.rb:147:in `recompile'
-/usr/lib/ruby/vendor_ruby/fssm/path.rb:73:in `call'
-/usr/lib/ruby/vendor_ruby/fssm/path.rb:73:in `run_callback'
-/usr/lib/ruby/vendor_ruby/fssm/path.rb:55:in `callback_action'
-/usr/lib/ruby/vendor_ruby/fssm/path.rb:35:in `update'
-/usr/lib/ruby/vendor_ruby/fssm/state/directory.rb:39:in `block in modified'
-/usr/lib/ruby/vendor_ruby/fssm/state/directory.rb:37:in `each'
-/usr/lib/ruby/vendor_ruby/fssm/state/directory.rb:37:in `modified'
-/usr/lib/ruby/vendor_ruby/fssm/state/directory.rb:18:in `refresh'
-/usr/lib/ruby/vendor_ruby/fssm/backends/inotify.rb:12:in `block in add_handler'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:205:in `call'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:205:in `block in watch'
-/usr/lib/ruby/vendor_ruby/rb-inotify/watcher.rb:41:in `[]'
-/usr/lib/ruby/vendor_ruby/rb-inotify/watcher.rb:41:in `callback!'
-/usr/lib/ruby/vendor_ruby/rb-inotify/event.rb:128:in `callback!'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:238:in `block in process'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:238:in `each'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:238:in `process'
-/usr/lib/ruby/vendor_ruby/rb-inotify/notifier.rb:221:in `run'
-/usr/lib/ruby/vendor_ruby/fssm/backends/inotify.rb:20:in `run'
-/usr/lib/ruby/vendor_ruby/fssm/monitor.rb:26:in `run'
-/usr/lib/ruby/vendor_ruby/fssm.rb:67:in `monitor'
-/usr/lib/ruby/vendor_ruby/compass/commands/watch_project.rb:87:in `perform'
-/usr/lib/ruby/vendor_ruby/compass/commands/base.rb:18:in `execute'
-/usr/lib/ruby/vendor_ruby/compass/commands/project_base.rb:19:in `execute'
-/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:43:in `perform!'
-/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:15:in `run!'
-/usr/bin/compass:30:in `block in <main>'
-/usr/bin/compass:44:in `call'
-/usr/bin/compass:44:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Function background_noise doesn't support keyword arguments\A         on line 45 of /home/brad/Desktop/SW PSD to HTML test/http/sass/_noise.scss, in `background-noise'\A         from line 20 of /home/brad/Desktop/SW PSD to HTML test/http/sass/screen.scss"; }
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  src: url("../fonts/GothamRounded-Medium.eot");
+  src: url("../fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Medium.otf") format("opentype"), url("../fonts/GothamRounded-Medium.woff") format("woff"), url("../fonts/GothamRounded-Medium.ttf") format("truetype"), url("../fonts/GothamRounded-Medium.svg#$GothamRounded-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 17, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* unvisited link */
+/* line 49, ../sass/screen.scss */
+a:link {
+  color: #F8F8F8;
+}
+
+/* visited link */
+/* line 54, ../sass/screen.scss */
+a:visited {
+  color: #EEEEEE;
+}
+
+/* mouse over link */
+/* line 59, ../sass/screen.scss */
+a:hover {
+  color: #FFFFFF;
+}
+
+/* link as it is clicked */
+/* line 64, ../sass/screen.scss */
+a:active {
+  color: #EEEEFF;
+}
+
+/* line 68, ../sass/screen.scss */
+h1, h2 {
+  margin: 0;
+}
+
+/* line 72, ../sass/screen.scss */
+html, body, div {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/* line 82, ../sass/screen.scss */
+p {
+  line-height: 1.5em;
+  margin: 2.0em;
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.75em;
+  color: #333333;
+}
+
+/* line 90, ../sass/screen.scss */
+.header-menu {
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.625em;
+  margin: 0 0 0.3em 0;
+  text-decoration: none;
+}
+
+/* line 97, ../sass/screen.scss */
+span.header-menu {
+  color: #A3A3A3;
+}
+
+/* line 101, ../sass/screen.scss */
+.search-background {
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/* line 107, ../sass/screen.scss */
+.main-title {
+  margin: 0 0 0.25em 0;
+  font-family: GothamRounded-Medium, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #292929;
+}
+
+/* line 115, ../sass/screen.scss */
+.nav-menu-item {
+  display: inline;
+  font-family: GothamRounded-Medium, sans-serif;
+  color: #1DA7DD;
+}
+
+/* line 121, ../sass/screen.scss */
+.nav-menu-item a {
+  padding: 1em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: -1em;
+  z-index: 10;
+  text-decoration: none;
+}
+
+/* unvisited link */
+/* line 133, ../sass/screen.scss */
+.nav-menu-item a:link {
+  color: #1DA7DD;
+}
+
+/* visited link */
+/* line 138, ../sass/screen.scss */
+.nav-menu-item a:visited {
+  color: #1DA7DD;
+}
+
+/* mouse over link */
+/* line 143, ../sass/screen.scss */
+.nav-menu-item a:hover {
+  color: #1DA7DD;
+  background: #292929 url("../images/noise.png");
+  -webkit-box-shadow: 0em 0.5em 0.5em -0.5em black;
+  -moz-box-shadow: 0em 0.5em 0.5em -0.5em black;
+  box-shadow: 0em 0.5em 0.5em -0.5em black;
+}
+
+/* link as it is clicked */
+/* line 150, ../sass/screen.scss */
+.nav-menu-item a:active {
+  color: #1DA7DD;
+}
+
+/* line 154, ../sass/screen.scss */
+.content-section-title {
+  height: 1.75em;
+  max-width: 38em;
+  min-width: 20em;
+}
+
+/* line 160, ../sass/screen.scss */
+.content-paragraph {
+  padding: 2em 1em 2em 0;
+  border: 0 none;
+  margin: 0;
+  max-width: 49.625em;
+  min-width: 20em;
+}
+
+/* line 168, ../sass/screen.scss */
+.content-section-title-left {
+  height: 1.75em;
+  max-width: 30.25em;
+  min-width: 16em;
+  display: inline-block;
+}
+
+/* line 175, ../sass/screen.scss */
+.content-section-title-text {
+  height: 1.75em;
+  padding: 0.6em;
+  display: inline-block;
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #DDDDDD;
+}
+
+/* line 186, ../sass/screen.scss */
+.content-section-title-right {
+  background: #D5D5D5;
+  width: 1.75em;
+  height: 1.75em;
+  display: block;
+  float: right;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  border-right: 0.0625em solid #A4A4A4;
+  border-bottom: 0.0625em solid #A4A4A4;
+}
+
+/* line 199, ../sass/screen.scss */
+.content-section-title-right-plus {
+  background-image: url("../images/greyplus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 205, ../sass/screen.scss */
+.content-section-title-right-dash {
+  background-image: url("../images/bluedash.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 211, ../sass/screen.scss */
+.significant-content-section-title-right {
+  -moz-border-radius-topright: 0.25em;
+  -webkit-border-top-right-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+
+/* line 215, ../sass/screen.scss */
+.content-section {
+  border-right: 0.0625em solid #BBBBBB;
+  border-bottom: 0.0625em solid #DDDDDD;
+  border-left: 0.0625em solid #BBBBBB;
+  padding: 2em 0;
+}
+
+/* line 223, ../sass/screen.scss */
+.content-section-image {
+  float: right;
+  margin: 2em;
+}
+
+/* line 228, ../sass/screen.scss */
+.significant-first-child {
+  -moz-border-radius-topleft: 0.25em;
+  -webkit-border-top-left-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+  -moz-border-radius-topright: 0.25em;
+  -webkit-border-top-right-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+
+/* line 232, ../sass/screen.scss */
+.new-content-indicator {
+  height: 0.45em;
+  padding: 0.25em;
+  -webkit-border-radius: 0.25em 0.25em;
+  -moz-border-radius: 0.25em / 0.25em;
+  border-radius: 0.25em / 0.25em;
+  margin: 1.625em 1.25em 0 0;
+  display: inline;
+  float: right;
+  background: #6DCFF6;
+}
+
+/* line 242, ../sass/screen.scss */
+.new-content-indicator-text {
+  padding: 0;
+  border: 0;
+  margin: auto;
+  position: relative;
+  top: -8px;
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+/* line 254, ../sass/screen.scss */
+.content-right-divider {
+  margin: 0 1.5em;
+  height: 2px;
+  /* old IE */
+  color: #757575;
+  /* Modern Browsers */
+  background-color: #757575;
+}
+
+/* line 263, ../sass/screen.scss */
+#page {
+  min-width: 320px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* line 269, ../sass/screen.scss */
+#header-section {
+  width: 100%;
+  /*decided against the base64 encoded image in the CSS*/
+  /*background: #292929 url('data:image/png;base64,iVBORw0KGgoA...ytpijCO9OGQAAAAASUVORK5CYII=');*/
+  background: #292929 left top url(../images/noise.png) scroll repeat;
+}
+
+/* line 276, ../sass/screen.scss */
+#header {
+  width: 100%;
+  min-width: 20em;
+  max-width: 60em;
+  padding: 0 1em;
+  height: 7.5em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* line 287, ../sass/screen.scss */
+#header-menu {
+  position: absolute;
+  top: 0.125em;
+  right: 0%;
+  margin: 0.25em 1.5em 0 0;
+  display: block;
+  float: left;
+}
+
+/* line 296, ../sass/screen.scss */
+#header-search-container {
+  display: inline-block;
+  margin: 0.25em 0 0 0;
+}
+
+/* line 301, ../sass/screen.scss */
+#header-search {
+  width: 9em;
+  height: 1.625em;
+  padding-right: 0;
+  border: 0 none;
+  margin-right: 0;
+  margin-left: 1em;
+  display: inline;
+}
+
+/* line 311, ../sass/screen.scss */
+#header-search-go {
+  width: 1.5em;
+  height: 1.625em;
+  display: inline;
+  padding-left: 0;
+  border: 0 none;
+  border-left: 0;
+  margin-left: 0;
+  background-image: url("../images/magnifying-glass.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 324, ../sass/screen.scss */
+#logo-hack {
+  width: 20em;
+  height: 7.5em;
+  overflow: visible;
+  display: block;
+}
+
+/* line 331, ../sass/screen.scss */
+#logo {
+  position: absolute;
+  left: -14.375em;
+  display: inline-block;
+}
+
+/* line 337, ../sass/screen.scss */
+#nav-section {
+  width: 100%;
+  max-width: 60em;
+  min-width: 18em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 345, ../sass/screen.scss */
+#nav {
+  padding: 0 1em;
+  margin: 0.75em 0 3em;
+}
+
+/* line 350, ../sass/screen.scss */
+#content {
+  width: 100%;
+  padding: 0 1em;
+  max-width: 60em;
+  min-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 359, ../sass/screen.scss */
+#content-left {
+  width: 100%;
+  max-width: 38em;
+  min-width: 18em;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  float: left;
+  display: inline-block;
+}
+/* line 368, ../sass/screen.scss */
+#content-left .subtitle {
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #1DA7DD;
+}
+/* line 375, ../sass/screen.scss */
+#content-left .content-section-title {
+  height: 1.75em;
+  border-bottom: 0.0625em solid #404040;
+  display: block;
+  background: #292929;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3a3a3a), color-stop(100%, #2e2e2e));
+  background-image: -webkit-linear-gradient(#3a3a3a, #2e2e2e);
+  background-image: -moz-linear-gradient(#3a3a3a, #2e2e2e);
+  background-image: -o-linear-gradient(#3a3a3a, #2e2e2e);
+  background-image: linear-gradient(#3a3a3a, #2e2e2e);
+}
+
+/* line 384, ../sass/screen.scss */
+#content-right {
+  width: 19.875em;
+  border-top: 0.1875em solid #404040;
+  border-right: 0.0625em solid #404040;
+  border-left: 0.0625em solid #404040;
+  float: left;
+  display: block;
+  background: #9D9D9D;
+  -webkit-border-radius: 0.25em 0.25em;
+  -moz-border-radius: 0.25em / 0.25em;
+  border-radius: 0.25em / 0.25em;
+  -webkit-box-shadow: inset 0em 0em 5em -0.5em #404040;
+  -moz-box-shadow: inset 0em 0em 5em -0.5em #404040;
+  box-shadow: inset 0em 0em 5em -0.5em #404040;
+}
+/* line 395, ../sass/screen.scss */
+#content-right section.content-section-right h2 {
+  min-width: 14em;
+  margin: 1.5em 0 0 1.5em;
+  display: inline-block;
+  background: none;
+}
+/* line 402, ../sass/screen.scss */
+#content-right .content-section-title {
+  min-width: 16em;
+  display: inline;
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #404040;
+}
+/* line 411, ../sass/screen.scss */
+#content-right p {
+  padding: 0em;
+  border: 0 none;
+  margin: 1em 2em 2em 2em;
+  font-size: 0.75em;
+  color: #FFFFFF;
+}
+
+/* line 420, ../sass/screen.scss */
+#footer-section {
+  position: relative;
+  top: 2em;
+  -webkit-box-shadow: inset 0em 7em 1em -7em #404040;
+  -moz-box-shadow: inset 0em 7em 1em -7em #404040;
+  box-shadow: inset 0em 7em 1em -7em #404040;
+  clear: both;
+  background: #DDDDDD;
+}
+
+/* line 428, ../sass/screen.scss */
+#footer {
+  height: 20em;
+  max-width: 60em;
+  padding: 1.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 436, ../sass/screen.scss */
+#copyright {
+  float: left;
+  display: inline;
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.75em;
+  color: #494949;
+}
+
+/* line 444, ../sass/screen.scss */
+#footer-menu {
+  float: right;
+  display: inline;
+}
+/* line 448, ../sass/screen.scss */
+#footer-menu a, #footer-menu span {
+  display: inline;
+  font-family: Tahoma-Regular, sans-serif;
+  font-size: 0.75em;
+  color: #494949;
+  text-decoration: none;
+}
