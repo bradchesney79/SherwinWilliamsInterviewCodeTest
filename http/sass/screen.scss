@@ -75,6 +75,10 @@ border:0;
 margin:0;
 }
 
+input:disabled {
+//fix styling here
+}
+
 p {
 line-height:1.5em;
 margin:2.0em;
@@ -416,7 +420,7 @@ background: #9D9D9D;
   $inset  : $default-box-shadow-inset
 */
 
-div.content-section-right h2 {
+section.content-section-right h2 {
 min-width:14em;
 margin:1.5em 0 0 1.5em;
 display:inline-block;

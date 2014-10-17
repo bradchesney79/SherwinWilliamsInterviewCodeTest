@@ -119,7 +119,7 @@ html, body, div {
   margin: 0;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 p {
   line-height: 1.5em;
   margin: 2.0em;
@@ -128,7 +128,7 @@ p {
   color: #333333;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .header-menu {
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.625em;
@@ -136,19 +136,19 @@ p {
   text-decoration: none;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 span.header-menu {
   color: #A3A3A3;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .search-background {
   background-image: url("../images/search.png");
   background-repeat: no-repeat;
   background-position: left center;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .main-title {
   margin: 0 0 0.25em 0;
   font-family: GothamRounded-Medium, sans-serif;
@@ -157,14 +157,14 @@ span.header-menu {
   color: #292929;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .nav-menu-item {
   display: inline;
   font-family: GothamRounded-Medium, sans-serif;
   color: #1DA7DD;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .nav-menu-item a {
   padding: 1em;
   -moz-border-radius-bottomleft: 0.25em;
@@ -182,19 +182,19 @@ span.header-menu {
 }
 
 /* unvisited link */
-/* line 129, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .nav-menu-item a:link {
   color: #1DA7DD;
 }
 
 /* visited link */
-/* line 134, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .nav-menu-item a:visited {
   color: #1DA7DD;
 }
 
 /* mouse over link */
-/* line 139, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .nav-menu-item a:hover {
   color: #1DA7DD;
   background: #292929 url("../images/noise.png");
@@ -204,19 +204,19 @@ span.header-menu {
 }
 
 /* link as it is clicked */
-/* line 146, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .nav-menu-item a:active {
   color: #1DA7DD;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .content-section-title {
   height: 1.75em;
   max-width: 38em;
   min-width: 20em;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .content-paragraph {
   padding: 2em 1em 2em 0;
   border: 0 none;
@@ -225,7 +225,7 @@ span.header-menu {
   min-width: 20em;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .content-section-title-left {
   height: 1.75em;
   max-width: 30.25em;
@@ -233,7 +233,7 @@ span.header-menu {
   display: inline-block;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .content-section-title-text {
   height: 1.75em;
   padding: 0.6em;
@@ -244,7 +244,7 @@ span.header-menu {
   color: #DDDDDD;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .content-section-title-right {
   background: #D5D5D5;
   width: 1.75em;
@@ -258,28 +258,28 @@ span.header-menu {
   border-bottom: 0.0625em solid #A4A4A4;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .content-section-title-right-plus {
   background-image: url("../images/greyplus.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .content-section-title-right-dash {
   background-image: url("../images/bluedash.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .significant-content-section-title-right {
   -moz-border-radius-topright: 0.25em;
   -webkit-border-top-right-radius: 0.25em;
   border-top-right-radius: 0.25em;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .content-section {
   border-right: 0.0625em solid #BBBBBB;
   border-bottom: 0.0625em solid #DDDDDD;
@@ -287,13 +287,13 @@ span.header-menu {
   padding: 2em 0;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .content-section-image {
   float: right;
   margin: 2em;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .significant-first-child {
   -moz-border-radius-topleft: 0.25em;
   -webkit-border-top-left-radius: 0.25em;
@@ -303,7 +303,7 @@ span.header-menu {
   border-top-right-radius: 0.25em;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .new-content-indicator {
   height: 0.45em;
   padding: 0.25em;
@@ -316,7 +316,7 @@ span.header-menu {
   background: #6DCFF6;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .new-content-indicator-text {
   padding: 0;
   border: 0;
@@ -329,7 +329,7 @@ span.header-menu {
   color: #FFFFFF;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .content-right-divider {
   margin: 0 1.5em;
   height: 2px;
@@ -339,14 +339,14 @@ span.header-menu {
   background-color: #757575;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 #page {
   min-width: 320px;
   width: 100%;
   background-color: #FFFFFF;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #header-section {
   width: 100%;
   /*decided against the base64 encoded image in the CSS*/
@@ -354,7 +354,7 @@ span.header-menu {
   background: #292929 left top url(../images/noise.png) scroll repeat;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #header {
   width: 100%;
   min-width: 20em;
@@ -366,7 +366,7 @@ span.header-menu {
   position: relative;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #header-menu {
   position: absolute;
   top: 0.125em;
@@ -376,13 +376,13 @@ span.header-menu {
   float: left;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #header-search-container {
   display: inline-block;
   margin: 0.25em 0 0 0;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 #header-search {
   width: 9em;
   height: 1.625em;
@@ -393,7 +393,7 @@ span.header-menu {
   display: inline;
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #header-search-go {
   width: 1.5em;
   height: 1.625em;
@@ -407,7 +407,7 @@ span.header-menu {
   background-position: center;
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 #logo-hack {
   width: 20em;
   height: 7.5em;
@@ -415,14 +415,14 @@ span.header-menu {
   display: block;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 #logo {
   position: absolute;
   left: -14.375em;
   display: inline-block;
 }
 
-/* line 333, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #nav-section {
   width: 100%;
   max-width: 60em;
@@ -431,7 +431,7 @@ span.header-menu {
   margin-right: auto;
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #nav {
   padding: 0 1em;
   margin: 0.75em 0 3em;
@@ -456,7 +456,7 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   $inset  : $default-box-shadow-inset
 }
 */
-/* line 365, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 #content {
   width: 100%;
   padding: 0 1em;
@@ -466,7 +466,7 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   margin-right: auto;
 }
 
-/* line 374, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 #content-left {
   width: 100%;
   max-width: 38em;
@@ -476,14 +476,14 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   float: left;
   display: inline-block;
 }
-/* line 383, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 #content-left .subtitle {
   font-family: Tahoma-Regular, sans-serif;
   font-size: 0.75em;
   font-weight: bold;
   color: #1DA7DD;
 }
-/* line 390, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 #content-left .content-section-title {
   height: 1.75em;
   border-bottom: 0.0625em solid #404040;
@@ -496,7 +496,7 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   background-image: linear-gradient(#3a3a3a, #2e2e2e);
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 #content-right {
   width: 19.875em;
   border-top: 0.1875em solid #404040;
@@ -520,14 +520,14 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
     $inset  : $default-box-shadow-inset
   */
 }
-/* line 419, ../sass/screen.scss */
-#content-right div.content-section-right h2 {
+/* line 423, ../sass/screen.scss */
+#content-right section.content-section-right h2 {
   min-width: 14em;
   margin: 1.5em 0 0 1.5em;
   display: inline-block;
   background: none;
 }
-/* line 426, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 #content-right .content-section-title {
   min-width: 16em;
   display: inline;
@@ -536,7 +536,7 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   font-weight: bold;
   color: #404040;
 }
-/* line 435, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 #content-right p {
   padding: 0em;
   border: 0 none;
@@ -545,7 +545,7 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   color: #FFFFFF;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 #footer-section {
   position: relative;
   top: 2em;
@@ -556,16 +556,16 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   background: #DDDDDD;
 }
 
-/* line 452, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 #footer {
-  height: 20em;
+  height: 8em;
   max-width: 60em;
   padding: 1.25em;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 #copyright {
   float: left;
   display: inline;
@@ -574,12 +574,12 @@ experienced weird rounding issue of 0.5em being upped to 1em & -1.5em...
   color: #494949;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
 #footer-menu {
   float: right;
   display: inline;
 }
-/* line 472, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 #footer-menu a, #footer-menu span {
   display: inline;
   font-family: Tahoma-Regular, sans-serif;
