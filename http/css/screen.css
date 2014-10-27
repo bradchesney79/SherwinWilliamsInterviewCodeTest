@@ -167,15 +167,16 @@ span.header-menu {
 /* line 121, ../sass/screen.scss */
 .nav-menu-item a {
   padding: 1em;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  -ms-border-radius: 0.25em;
-  -o-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -moz-border-radius-bottomleft: 0.25em;
+  -webkit-border-bottom-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  -moz-border-radius-bottomright: 0.25em;
+  -webkit-border-bottom-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
   margin: 0;
   display: inline-block;
   position: relative;
-  top: -1em;
+  top: -0.75em;
   z-index: 10;
   text-decoration: none;
 }
@@ -530,7 +531,7 @@ span.header-menu {
 
 /* line 428, ../sass/screen.scss */
 #footer {
-  height: 20em;
+  height: 4em;
   max-width: 60em;
   padding: 1.25em;
   margin-left: auto;
